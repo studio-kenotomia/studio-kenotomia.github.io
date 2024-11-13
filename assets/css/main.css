@@ -438,19 +438,6 @@ p {
   }
 }
 
-.banner-section {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 768px) {
-  .banner-section {
-      background-size: cover;
-      background-attachment: scroll;
-      background-position: center top;
-  }
-}
 
 
 .banner__soci li a {
@@ -2234,9 +2221,10 @@ p {
 .banner__section {
   background: url(../img/banner/2.png) no-repeat center center;
   background-size: cover;
-  position: relative;
+  position: center;
   overflow: hidden;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .banner__content {
@@ -2381,6 +2369,13 @@ p {
     font-size: 16px;
   }
 }
+
+@media (max-width: 768px) {
+  .banner-section {
+    background-size: contain; /* Ensures it fits the screen without distortion */
+    background-attachment: scroll;
+    background-position: center center;
+  }
 
 .banner__thumb {
   position: absolute;
