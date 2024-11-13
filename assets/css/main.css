@@ -1866,6 +1866,7 @@ p {
   box-shadow: 0px -31px 32px 9px #234DD4;
 }
 
+
 .header-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -2186,7 +2187,7 @@ p {
   }
 }
 .banner__section {
-  background: url(../img/banner/banner-bg.png) no-repeat center center;
+  background: url(../img/banner/2.png) no-repeat center center;
   background-size: cover;
   position: relative;
   overflow: hidden;
