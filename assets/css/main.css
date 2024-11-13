@@ -438,6 +438,21 @@ p {
   }
 }
 
+.banner-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+      background-size: cover;
+      background-attachment: scroll;
+      background-position: center top;
+  }
+}
+
+
 .banner__soci li a {
   display: inline-flex;
   align-items: center;
