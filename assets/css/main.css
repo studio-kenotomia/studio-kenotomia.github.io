@@ -32,7 +32,7 @@
   --mtitle: #000D27;
   --pra: #999999;
   --subtitle: #121212;
-  --base: #ffffff;
+  --base: #FFBE98;
   --hover: #ffffff9e;
   --bg1: #E9F0FF;
   --ftext: #818181;
@@ -41,7 +41,7 @@
   --border1: #414141;
   --ratting: #ffa311;
   --bgsection: #000D27;
-  --success: #ffffff;
+  --success: #FFBE98;
   --danger: #ED5050;
   --boxes1: rgba(26, 77, 190, 0.05);
   --cborder: #D9D9D9;
@@ -437,6 +437,36 @@ p {
     padding-top: 80px;
   }
 }
+
+.banner__soci li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff; /* Text color */
+  background-color: #1DBF73; /* Default background color for Fiverr and Upwork icons */
+  text-decoration: none;
+}
+
+/* Specific styles for Fiverr and Upwork */
+.fiver-icon {
+  background-color: #1DBF73; /* Fiverr color */
+}
+
+.upwork-icon {
+  background-color: #6fda44; /* Upwork color */
+}
+
+/* Hover effects */
+.banner__soci li a:hover {
+  color: #1DBF73; /* Change text color on hover */
+  background-color: #ffffff; /* Invert background on hover */
+}
+
 
 .pb-120 {
   padding-bottom: 120px;
