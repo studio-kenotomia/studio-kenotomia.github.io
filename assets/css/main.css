@@ -1167,7 +1167,7 @@ p {
 }
 
 .gratext {
-  background: -webkit-linear-gradient(#4569E7, #1AEFD5);
+  background: -webkit-linear-gradient(#4569E7, ##FFBE98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2939,16 +2939,7 @@ p {
   }
 }
 
-/* Add this CSS to your stylesheet */
-/* Style for the spans */
-.pra span {
-  transition: color 0.2s;
-}
 
-/* Hover effect */
-.pra span.hovered {
-  color: #FFBE98;
-}
 
 
 .project__wraptwo {
@@ -3273,7 +3264,7 @@ p {
   border-top: 1px solid rgb(38, 37, 37);
 }
 .service__unique__item:hover {
-  border-color: rgba(194, 236, 29, 0.6196078431);
+  border-color: #FFBE98;
 }
 .service__unique__item:hover .left__service .serial__adjust .cont h2 a {
   color: var(--base);
@@ -3454,7 +3445,7 @@ p {
   display: none;
 }
 .ser__components .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-  color: #c9f31d;
+  color: #FFBE98;
   box-shadow: none;
   border: unset;
   background: transparent;
@@ -3619,7 +3610,7 @@ p {
   background: var(--title);
 }
 .price__item.pri__active .big__title {
-  border-color: #b6dc1c;
+  border-color: #FFBE98;
 }
 .price__item.pri__active .pri__list li {
   color: var(--mtitle);
@@ -4879,7 +4870,7 @@ p {
   position: absolute;
   content: "";
   bottom: 100%;
-  background: #aad302;
+  background: #FFBE98;
   left: 0;
   width: 100%;
   height: 100%;
