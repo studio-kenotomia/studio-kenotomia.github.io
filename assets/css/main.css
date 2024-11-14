@@ -2202,6 +2202,21 @@ p {
   }
 }
 
+.exri__item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.exri__item > span {
+  flex: 1;
+}
+
+.exri__item .expri__cont {
+  flex: 2;
+}
+
+
 .banner__content {
   padding: 140px 0 180px;
 }
