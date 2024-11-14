@@ -2939,6 +2939,18 @@ p {
   }
 }
 
+/* Add this CSS to your stylesheet */
+/* Style for the spans */
+.pra span {
+  transition: color 0.2s;
+}
+
+/* Hover effect */
+.pra span.hovered {
+  color: #FFBE98;
+}
+
+
 .project__wraptwo {
   padding-left: 18px;
 }
@@ -2987,10 +2999,12 @@ p {
   }
 }
 
+
+
 .common__sub {
   font-size: 24px;
   font-family: "Caveat", cursive;
-  color: rgb(201, 243, 29);
+  color:  #FFBE98;;
   position: relative;
   display: flex;
   align-items: center;
