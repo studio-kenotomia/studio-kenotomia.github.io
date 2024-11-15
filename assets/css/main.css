@@ -73,6 +73,38 @@ h1 {
   font-family: "Kanit", sans-serif;
 }
 
+/* Style for the social list */
+.social {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0 auto; /* Center the list within its container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for each social box */
+.social-box {
+  border: 1px solid #FFBE98;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 80%; /* Adjust width as needed */
+  box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+
+.social-box a {
+  color: inherit;
+  text-decoration: none;
+  display: block; /* Make the link fill the social box */
+}
+
+.social li,
+.social li a {
+  background: none;
+}
+
 h2 {
   font-size: 40px;
   line-height: 120%;
@@ -1690,6 +1722,7 @@ p {
   }
 }
 
+
 .sub__contac-item {
   display: flex;
   align-items: center;
@@ -1768,6 +1801,7 @@ p {
   top: 0;
   transition: all 0.4s;
   overflow-y: scroll;
+  overflow-x: scroll;
 }
 .subside__barmenu .remove__click {
   width: 40px;
@@ -1799,10 +1833,11 @@ p {
   margin-bottom: 40px;
 }
 .subside__barmenu .sub__contact__wrapper .social li a {
-  width: 45px;
-  height: 45px;
-  background: var(--base);
-  border: 1px solid var(--base);
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  border-radius: 0;
 }
 .subside__barmenu .sub__contact__wrapper .social li a i {
   color: var(--title);
@@ -1813,6 +1848,91 @@ p {
 .subside__barmenu.active {
   right: 0px;
 }
+
+
+/* Adjust the padding of the contact content to accommodate the logo */
+.sub__contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 40px; /* Removed top padding */
+}
+
+/* Style for Contact Items */
+.sub__contact-content .sub__contac-item {
+  width: 100%;
+}
+
+/* Increase space after address */
+.sub__contact-content .sub__contac-item:first-child {
+  margin-bottom: 30px; /* Increased space between address and email */
+}
+
+/* Increase space after email */
+.sub__contact-content .sub__contac-item:nth-child(2) {
+  margin-bottom: 40px; /* Increased space between email and social links */
+}
+
+/* Center Text in Contact Items */
+.sub__contact-content .content {
+  text-align: center;
+}
+
+/* Style for the Social List */
+.sub__contact-content .social {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Style for Each Social Box */
+.social-box {
+  border: 1px solid #FFBE98;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #FFFFFF; /* Initial text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+/* Style for Social Links */
+.social-box a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover Effect for Social Boxes */
+.social-box:hover {
+  background-color: #FFBE98; /* Fill background with outline color on hover */
+}
+
+.social-box:hover a {
+  color: #000000; /* Change text color to black on hover */
+}
+
+/* Ensure No Horizontal Scroll */
+.subside__barmenu {
+  overflow-x: hidden;
+}
+
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+/* Sidebar Logo */
+.sidebar-logo {
+  max-width: 80%; /* Adjust this percentage as needed */
+  height: auto;
+}
+
+
+
 
 .header-section {
   width: 100%;
@@ -2989,7 +3109,6 @@ p {
     font-size: 29px;
   }
 }
-
 
 
 .common__sub {
